@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/jpg/flag" href="./images/download_flag.jpg" />
+    <title>Polski quiz</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+    </style>
+  </head>
+
+  <body>
+
+    <div id="start-screen">
+      <div id="overlay"></div>
+      <div id="another-overlay"></div>
+      <div id ="text-container">
+      <h1>Polski quiz</h1>
+      <h2>Check your polski skills!!!</h2>
+      <p>Use the left and right arrow to choose your answer</p>
+      <img src="images\buttons.gif" alt="buttons gif" class="arrows-img" />
+      <p>Press enter to submit your answer</p>
+      <img src="images\enter.gif" alt="enter gif" class="enter-img" />
+      <button id="start-button">Hit space to start</button>
+    </div>
+    </div>
+
+
+
+    <div id="game-screen">
+      <div id="question-container"></div>
+      <div id="questionCount"></div>
+
+        <div id="question"></div>
+        <img
+          id="question-image"
+          src=""
+          alt="Question Image"
+        />
+        <ul id="choices"></ul>
+        <button id="nextButton" class="button-primary">
+          Press space to continue
+        </button>
+  
+    </div>
+
+    <div id="end-screen">
+      <article id="result-container">Your score</article>
+      <img id="result-img" src="placeholder" alt="placeholder">
+      <p id="comment">Placeholder</p>
+      <button id="restartButton" class="button-secondary">Restart Quiz</button>
+    </div>
+
+    <script src="./js/question.js"></script>
+    <script src="./js/quiz.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
